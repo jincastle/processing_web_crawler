@@ -13,3 +13,4 @@
 [시스템 명령어 실행 - subprocess](https://www.notion.so/subprocess-000028f8592241eebdc943dd4ebe9e12)
 
 
+<img width="966" alt="스크린샷 2023-01-08 오후 5 08 30" src="https://user-images.githubusercontent.com/65802134/211186523-db4d8a0d-b926-4261-be36-fd66abfa7086.png">
