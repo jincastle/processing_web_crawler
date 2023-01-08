@@ -11,3 +11,5 @@
 [병렬처리2 - multiprocessing - 별개 메모리사용](https://www.notion.so/2-multiprocessing-006515101d6b4332b32ddabc2581c45a)
 
 [시스템 명령어 실행 - subprocess](https://www.notion.so/subprocess-000028f8592241eebdc943dd4ebe9e12)
+
+

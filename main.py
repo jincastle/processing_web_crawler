@@ -75,20 +75,24 @@ def web_crawler(url):
     print(beautifulSoup.find("ul", attrs={"class": "type06_headline"}).get_text())
 
 
-def main():
+def main(cpu=3):
+    from multiprocessing import Pool
+    import time
+
     url_list = [url1, url2, url3, url4, url5, url6]
 
-    logger.info(f''' 멀티프로세스가 실행됩니다''')
+    logger.info(f''' 멀티프로세스가 시작됩니다. ''')
     start_time = time.time()
-    # 프로세스 개수 설정
-    pool=Pool(processes=cpu)  # 3개 CPU 코어를 사용합니다.
-    result = pool.map(web_crawler, url_list) # 각 URL 에 웹 크롤러 할당
 
-    pool.close() # 풀링 종류
-    pool.join() # 결과 합치기
+    pool = Pool(processes=cpu)  # N개 CPU 코어를 사용합니다.
+    result = pool.map(web_crawler, url_list)  # 각 URL 에 웹 크롤러 할당
+
+    pool.close()  # 풀링 종료
+    pool.join()  # 결과 합치기
 
     logger.info(f''' 멀티프로세스가 종료되었습니다. ''')
     logger.info("--- %s seconds ---" % (time.time() - start_time))
+
 
 if __name__ == '__main__':
     ''' 입력 매개변수 설정 '''
