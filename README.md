@@ -1,5 +1,4 @@
 ## 배운 것들
-# 시스템 정보 확인- platform, os, psutil
 
 [매개변수 입력 받기 - sys.argv, argparse](https://www.notion.so/sys-argv-argparse-2e0081d10b164cf394bdccbd583d2346)
 
